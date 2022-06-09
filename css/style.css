@@ -1,0 +1,289 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+    font-family: donut;
+    src: url(../fonts/donutsCookies.woff2) format('woff2');
+}
+div{font-family: donut;}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    color: #363636;
+    font-family: Pretendard;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+header{
+    border-top: #a57dff 4px solid;
+}
+
+.hWrap{
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.gnb{
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 600; 
+    margin-top: 30px;
+}
+
+.gnb li{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.util{
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.util li{
+    border-left: 1px solid #999;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.util li:first-child{
+    border:0;
+}
+
+.gnb li:first-child{
+    text-shadow: 1px 1px 5px rgb(148, 0, 211. 0.5),
+                 1px 1px 1px darkviolet;
+    /* 글자에 그림자 넣는 속성
+    text-shadow : x값 y값 번짐 색상
+    x값 가로축 이동 : 왼->오른쪽으로 얼마나 이동할지 
+    y값 가로축 이동 : 위->아래쪽으로 얼마나 이동할지 
+    번짐 - size 의 개념
+    
+    텍스트 섀도우는 이렇게 , 로 구분하여 
+    여러단계로 넣을 수 있다*/
+}
+.util{
+    font-size: 12px;
+    color: #666;
+    display: absolute;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.util li{
+    border-left: 1px solid #999;
+    ;
+
+}
+.bn{
+    height: 560px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.bn a{
+    display: block;
+    height: 100%;
+}
+
+.s1{
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
+    display: flex;
+    /* flex를 쓰면 항상 하나의 줄안에
+    모든 아이템들을 다 정렬시키려고 함!!! */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.s1 h3{
+    font-family: donut;
+    font-size: 30px;
+}
+
+.s1 p{
+    font-size: 14px;
+}
+
+.photo1{
+    width: 648px;
+}
+
+.txt1{
+    width: 648px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt2{
+    width: 648px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-top: 24px;
+}
+
+.photo2{
+    width: 648px;
+    margin-top: 24px;
+}
+
+
+.s2{
+    margin-top: 96px;
+}
+
+.s2 h3{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.s2 .con{
+    width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.s2 .item{
+    width: 312px;
+    border-radius: 30px;
+    /* 원래 부모 요소보다 큰 자식요소는 밖으로 튀어나가 있는 것
+    처럼 보입니다!!! 원래그래요!!!
+     마치 클리핑마스크 한 것처럼
+     부모 밖으로 튀어나가 있는 것들을 숨기고 싶다면 */
+     overflow: hidden;
+     box-shadow: 10px 10px 20px rgba(183, 163, 185, 0.5);
+     /* 
+     text-shadow랑 똑같음
+     box-shadow : 가로값 세로값 번짐(크기) 색상
+     가로값 : 왼쪽 -> 오른쪽 이동값
+     세로값 : 위쪽 -> 아래쪽 이동값
+     */
+
+   
+     transition: all 1.5s;
+}
+
+.s2 .item:hover{
+    transform: translate(-5px,-5px);
+    /* 있던 자리에서 움직이는 속성!
+    꾸미기 속성이므로 이걸로 정렬을 시켜서는 안되고 
+    딱 이렇게 마우스 올렸을때 모양변하는 용도 정도로만 사용
+    
+    transform: translate(x축이동값, y축이동값)
+       x축 이동값 : 왼 > 오른
+       y축 이동값 : 위 > 아래 
+    */
+    box-shadow: 10px 10px 30px rgba(183, 163, 185, 0.3);
+}
+
+.s2 .item .txt{
+    padding:25px;
+    /* padding: 상하좌우 */
+}
+
+.s2 h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.s2 p{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.s3{
+    margin-top: 120px;
+    height: 450px;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s3 .wrap{
+    width: 1320px;
+    background-color: #a57dff;
+}
+
+.s3 .tit{
+    font-size: 30px;
+    font-family: donut;
+}
+
+.s3 h3{
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.s3 h3 span{
+    font-weight: 700;
+}
+
+.s3 .txt{
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.btn{
+    margin-top: 12px;
+    display: flex;
+}
+
+.btn a{
+    display: block;
+    width: 175px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 100px;
+    color: #363636;
+    text-align: center;
+    line-height: 55px;
+    font-weight: 600;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0 , 0.3);
+    transition: all 1s;
+
+}
+
+.btn a:hover{
+    transform: translate(2px, 2px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    background-color:rgba(255, 255, 255, 0.8);
+}
+
+.btn a:last-child{
+    margin-left: 24px;
+}
